@@ -1,0 +1,282 @@
+<!--
+
+=========================================================
+* Neumorphism UI - v1.0.0
+=========================================================
+
+* Product Page: https://themesberg.com/product/ui-kits/neumorphism-ui
+* Copyright 2020 Themesberg MIT LICENSE (https://www.themesberg.com/licensing#mit)
+
+* Coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- Primary Meta Tags -->
+<title> Sales Prediction</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="title" content="Neumorphism UI">
+<meta name="author" content="Themesberg">
+
+<link rel="canonical" href="https://themesberg.com/product/ui-kits/neumorphism-ui/" />
+
+<!--  Social tags -->
+<meta name="keywords" content="neumorphism, neumorphism ui, neomorphism, neomorphism ui, neomorphism css, neumorphism css, neumorph, neumorphic, design system, login, form, table, tables, card, cards, navbar, modal, icons, icons, map, chat, carousel, menu, datepicker, gallery, slider, date, social, dropdown, search, tab, nav, footer, date picker, forms, tabs, time, button, select, input, timeline, cart, about us, account, log in, blog, profile, portfolio, landing page, ecommerce, shop, landing, register, app, contact, one page, sign up, signup, store, bootstrap 4, bootstrap4, dashboard, bootstrap 4 dashboard, bootstrap 4 design, bootstrap 4 system, bootstrap 4, bootstrap 4 uit kit, bootstrap 4 kit, themesberg, html kit, html css template, web template, bootstrap, bootstrap 4, css3 template, frontend, responsive bootstrap template, bootstrap ui kit, responsive ui kit">
+<meta name="description" content="Start developing neumorphic web applications and pages using Neumorphism UI. It features over 100 individual components and 5 example pages.">
+
+<!-- Schema.org markup for Google+ -->
+<meta itemprop="name" content="Neumorphism UI by Themesberg">
+<meta itemprop="description" content="Start developing neumorphic web applications and pages using Neumorphism UI. It features over 100 individual components and 5 example pages.">
+<meta itemprop="image" content="https://themesberg.s3.us-east-2.amazonaws.com/public/products/neumorphism-ui/neumorphism-thumbnail.jpg">
+
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="product">
+<meta name="twitter:site" content="@themesberg">
+<meta name="twitter:title" content="Neumorphism UI by Themesberg">
+<meta name="twitter:description" content="Start developing neumorphic web applications and pages using Neumorphism UI. It features over 100 individual components and 5 example pages.">
+<meta name="twitter:creator" content="@themesberg">
+<meta name="twitter:image" content="https://themesberg.s3.us-east-2.amazonaws.com/public/products/neumorphism-ui/neumorphism-thumbnail.jpg">
+
+<!-- Open Graph data -->
+<meta property="fb:app_id" content="214738555737136">
+<meta property="og:title" content="Neumorphism UI by Themesberg" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://demo.themesberg.com/neumorphism-ui/" />
+<meta property="og:image" content="https://themesberg.s3.us-east-2.amazonaws.com/public/products/neumorphism-ui/neumorphism-thumbnail.jpg"/>
+<meta property="og:description" content="Start developing neumorphic web applications and pages using Neumorphism UI. It features over 100 individual components and 5 example pages." />
+<meta property="og:site_name" content="Themesberg" />
+
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="120x120" href="{{url_for('static', filename='jd.png')}}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{url_for('static', filename='jd.png')}}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{url_for('static', filename='jd.png')}}">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+
+<!-- Pixel CSS -->
+<link rel="stylesheet" href="{{ url_for('static', filename='neumorphism.css') }}">
+
+</head>
+
+<body>
+    <header class="header-global">
+    <nav id="navbar-main" aria-label="Primary navigation" class="navbar navbar-main navbar-expand-lg navbar-theme-primary headroom navbar-light navbar-transparent navbar-theme-primary">
+        <div class="container position-relative">
+            <a class="navbar-brand shadow-soft py-2 px-3 rounded border border-light mr-lg-4" href="/">
+                <img class="navbar-brand-dark" src="{{url_for('static', filename='jd.png')}}" alt="Logo light">
+                <img class="navbar-brand-light" src="{{url_for('static', filename='jd.png')}}" alt="Logo dark">
+            </a>     
+            <div class="col-lg-9 col-xl-9">
+            <h4 class="display-3 mb-0" style="margin-left: 113px;">Sales Prediction</h4>
+            </div>
+
+        </div>
+    </nav>
+</header>
+    <main>
+
+
+    <div class="section section-lg pt-6 mt-4">
+      <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="tab-content mt-4 mt-lg-0" id="nav-tabContent-ecommerce">
+                    <div class="tab-pane fade show active" id="nav-credit-card" role="tabpanel" aria-labelledby="nav-credit-card-tab">                      
+                        <div class="card bg-primary shadow-soft border-light p-3 mb-4">
+                            <div class="card-header border-light p-3">
+                                <h3 class="h5 mb-0">Item details</h3> 
+                            </div>
+                            <form class="" action="/predict" method="post">
+                            <div class="card-body p-4">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-5 mb-0">
+                                        <!-- Form -->
+                                        <div class="form-group mb-4">
+                                            <label for="">Item Weight (Kg) *</label>
+                                            <input type="number" step="any" min="0" class="form-control" placeholder="e.g. 9.3000"  aria-describedby="cartInputEmail1" required="required" name="item_weight">
+                                        </div>
+                                        <!-- End of Form -->
+                                    </div>
+                                    <div class="col-12 col-md-5 mb-0" style="margin-top: -2px;">
+                                        <!--Form-->
+                                        <div class="form-group">
+                                            <label class="my-1 mr-2" for="cartFormCustomSelectPref1">Item Fat Content *</label>
+                                            <select class="custom-select my-1 mr-sm-2"  name="item_fat_content" required>
+                                                <option selected value="">Choose...</option>
+                                                <option value="1">Low Fat</option>
+                                                 <option value="2">Regular</option>
+		                                         <option value="0">High Fat</option>
+                                            </select>
+                                        </div>
+                                        <!-- End of Form -->
+                                    </div>
+                                    <div class="col-12 col-md-5 mb-0">
+                                        <!-- Form -->
+                                        <div class="form-group mb-4">
+                                            <label for="">Item Visibility *</label>
+                                            <input type="number" step="any" min="0" required="required" placeholder="e.g. 0.019278" class="form-control"  aria-describedby="cartInputAdress1" name="item_visibility">
+                                        </div>
+                                        <!-- End of Form -->
+                                    </div>
+                                    <div class="col-12 col-md-5 mb-0" style="margin-top: -2px;">
+                                        <!-- Form -->
+                                        <div class="form-group mb-4">
+                                            <label class="my-1 mr-2" for="">Item Type *</label>
+                                            <select class="custom-select my-1 mr-sm-2" id="" name="item_type" required>
+                                                <option selected value="">Choose...</option>
+                                                <option value="0">Baking Goods</option>
+                                                <option value="1">Breads</option>
+                                                <option value="2">Breakfast</option>
+                                                <option value="3">Canned</option>
+		                                        <option value="4">Dairy</option>
+                                                <option value="5">Frozen Foods</option>
+                                                <option value="6">Fruits and Vegetables</option>
+                                                <option value="7">Hard Drinks</option>
+		                                        <option value="8">Health and Hygiene</option>
+                                                <option value="9">Household</option>
+                                                <option value="10">Meat</option>
+                                                <option value="11">Others</option>
+		                                        <option value="12">Seafood</option>
+                                                <option value="13">Snack Foods</option>
+                                                <option value="14">Soft Drinks</option>
+                                                <option value="15">Starchy Foods</option>
+                                            </select>
+                                        </div>
+                                        <!-- End of Form -->
+                                    </div>
+                                    <div class="col-12 col-md-5 mb-0" style="margin-right: 440px;margin-top: -2px;">
+                                        <!-- Form -->
+                                        <div class="form-group mb-4">
+                                            <label for="cartInputZip1"> Item MRP ($) *</label>
+                                            <input type="number" step="any" min="0" required="required" placeholder="e.g. 249.809204" class="form-control" id="cartInputZip1" aria-describedby="cartInputZip1" name="item_mrp">
+                                        </div>
+                                        <!-- End of Form -->
+                                    </div>
+                                    
+                                    <div class="col-12  mb-3" style="margin-right: 50px;">
+                                    <div class="card-header border-light p-3" >
+                                        <h3 class="h5 mb-0" >Outlet details</h3> 
+                                    </div>
+                                </div>
+
+                                    <div class="col-12 col-md-5 mb-0">
+                                        <!-- Form -->
+                                        <div class="form-group mb-3">
+                                            <label for="">Outlet Establishment Year (YYYY) *</label>
+                                            <input type="number" max="2023" placeholder="e.g. 2009" required="required" class="form-control" aria-describedby="cartInputCompany1" required name="outlet_establishment_year">
+                                        </div>
+                                        <!-- End of Form -->
+                                    </div>
+                                    <div class="col-12 col-md-5 mb-0" style="margin-top: -2px;">
+                                        <!-- Form -->
+                                        <div class="form-group mb-3">
+                                            <label class="my-1 mr-2"  for="">Outlet Size *</label>
+                                            <select class="custom-select my-1 mr-sm-2"  name="outlet_size" required>
+                                                <option selected value="">Choose...</option>
+                                                <option value="0">High</option>
+                                                <option value="1">Medium</option>
+                                                <option value="2">Small</option>
+                                            </select>
+                                        </div>
+                                        <!-- End of Form -->
+                                    </div>
+                                    <div class="col-12 col-md-5 mb-0">
+                                        <!-- Form -->
+                                        <div class="form-group mb-4">
+                                            <label class="my-1 mr-2"  for="">Outlet Location Type *</label>
+                                            <select class="custom-select my-1 mr-sm-2" name="outlet_location_type" required>
+                                                <option selected value="">Choose...</option>
+                                                <option value="0">Tier 1</option>
+                                                <option value="1">Tier 2</option>
+                                                <option value="2">Tier 3</option>
+                                            </select>
+                                        </div>
+                                        <!-- End of Form -->
+                                    </div>
+                                    <div class="col-12 col-md-5 mb-0">
+                                        <!-- Form -->
+                                        <div class="form-group mb-4">
+                                            <label class="my-1 mr-2"  for="">Outlet Type *</label>
+                                            <select class="custom-select my-1 mr-sm-2" id="cartFormCustomSelectPref1" name="outlet_type" required>
+                                                <option selected value="">Choose...</option>
+                                                <option value="0">Grocery Store</option>
+                                                <option value="1">Supermarket Type1</option>
+                                                <option value="2">Supermarket Type2</option>
+                                                <option value="3">Supermarket Type3</option>
+                                            </select>
+                                        </div>
+                                        <!-- End of Form -->
+                                    </div>
+                                    <div class="col-12 col-md-5 mb-0">
+                                        <!-- Form -->
+                                        <div class="form-group mb-3 ml-6 mt-3">
+                                           <input type="submit" class="btn btn-primary text-success animate-down-2 mr-4 ml-4" value="Submit">
+<!--                                            <button class="btn btn-primary text-success animate-down-2 mr-4 ml-4" type="button" >Submit</button>-->
+                                            <button class="btn btn-primary text-danger animate-down-2 mr-2" type="reset">Reset</button>
+                                        </div>
+                                        <!-- End of Form -->
+                                    </div>
+                                 
+
+                                </div>
+                            </div>
+                        </form>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</main>
+
+    <!-- <a id="producthunt-badge" href="https://www.producthunt.com/posts/neumorphism-ui?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-neumorphism-ui" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=200908&theme=dark" alt="Neumorphism UI - Neumorphism inspired UI web components, sections and pages | Product Hunt Embed" style="width: 250px; height: 54px;" width="250px" height="54px" /></a> -->
+
+<footer class="d-flex pb-5 pt-0 pt-md-4 border-top border-light bg-primary">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <a href="/" target="_blank" class="d-flex justify-content-center">
+                    <img src="{{url_for('static', filename='j.png')}}" height="25" class="mb-3" alt="Themesberg Logo">
+                </a>
+            <div class="d-flex text-center justify-content-center align-items-center" role="contentinfo">
+                <p class="font-weight-normal font-small mb-0">Copyright © Tanya
+                    <span class="current-year">2023</span>. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Core -->
+<script src="./vendor/jquery/dist/jquery.min.js"></script>
+<script src="./vendor/popper.js/dist/umd/popper.min.js"></script>
+<script src="./vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./vendor/headroom.js/dist/headroom.min.js"></script>
+
+<!-- Vendor JS -->
+<script src="./vendor/onscreen/dist/on-screen.umd.min.js"></script>
+<script src="./vendor/nouislider/distribute/nouislider.min.js"></script>
+<script src="./vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+<script src="./vendor/waypoints/lib/jquery.waypoints.min.js"></script>
+<script src="./vendor/jarallax/dist/jarallax.min.js"></script>
+<script src="./vendor/jquery.counterup/jquery.counterup.min.js"></script>
+<script src="./vendor/jquery-countdown/dist/jquery.countdown.min.js"></script>
+<script src="./vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<script src="./vendor/prismjs/prism.js"></script>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- Neumorphism JS -->
+<script src="./assets/js/neumorphism.js"></script>
+</body>
+
+</html>
